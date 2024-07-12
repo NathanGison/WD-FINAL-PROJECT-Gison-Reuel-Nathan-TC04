@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #012a36; 
+    color: #00f2ff;
+    animation: fade-in 2s ease;
+}
+
+header {
+    background-color: #073642;
+    padding: 1rem;
+    animation: slide-down 1s ease;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: slide-down 1s ease;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    animation: slide-down 1s ease;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.nav-links, .auth-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a, .auth-links img {
+    color: #00FFFF;
+    text-decoration: none;
+    height: 40px;
+    animation: fade-in 1.5s ease;
+}
+
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #002b36;
+    color: #fff;
+    text-align: left;
+}
+
+.about-me-text {
+    max-width: 50%;
+    margin-right: 2rem;
+}
+
+.about-me-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.about-me-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    border: 10px solid white; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  
+}
+
+.about-me-image img:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.about-me-text h2 {
+    font-size: 1.5rem;
+    color: #00f2ff;
+    margin-bottom: 1rem;
+}
+
+.about-me-text p {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.about-me-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+footer {
+    background-color: #073642;
+    text-align: center;
+    padding: 1rem;
+    color: #00f2ff;
+    margin-top: 2rem;
+}
+
+.highlight {
+    color: #00f2ff;
+}
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slide-down {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slide-up {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+

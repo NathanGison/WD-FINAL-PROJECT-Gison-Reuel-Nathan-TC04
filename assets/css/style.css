@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #002B36;
+    color: #00FFFF;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #073642;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.nav-links, .auth-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a, .auth-links img {
+    color: #00FFFF;
+    text-decoration: none;
+    height: 40px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    text-align: left;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.projects-button, .about-me-button, .credits-button, .contacts-button{
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    color: #002B36;
+    background-color: #00FFFF;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.landingpagepicture {
+    max-width: 40%;
+    text-align: center;
+}
+
+.landingpagepicture img {
+    max-width: 100%;
+    height: 500px;
+    border-radius: 50%;
+    border: 5px solid white; /* White border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Initial box shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box shadow */
+}
+
+/* Hover effect for pop out and box shadow */
+.landingpagepicture img:hover {
+    transform: scale(1.05); /* Pop out effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced box shadow */
+}
+
+.description {
+    padding: 2rem;
+    background-color: #0986a5;
+    color: #0ed6d6;
+    text-align: left;
+}
+
+footer {
+    background-color: #073642;
+    text-align: center;
+    padding: 1rem;
+    color: #00f2ff;
+    margin-top: 2rem;
+}
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slide-down {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slide-up {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
