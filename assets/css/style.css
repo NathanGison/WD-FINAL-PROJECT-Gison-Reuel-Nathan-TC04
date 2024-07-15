@@ -42,7 +42,39 @@ nav {
     color: #00FFFF;
     text-decoration: none;
     height: 40px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    border: 2px solid transparent;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
+
+.nav-links a:hover {
+    color: #009999;
+    border: 2px solid #00FFFF;
+    animation: pop-out 0.3s forwards;
+}
+
+.auth-links img {
+    transition: transform 0.3s ease;
+}
+
+.auth-links img:hover {
+    transform: scale(1.2);
+    animation: pop-out 0.3s forwards;
+}
+
+@keyframes pop-out {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
 
 .hero {
     display: flex;
@@ -65,7 +97,7 @@ nav {
     margin: 1rem 0;
 }
 
-.projects-button, .about-me-button, .credits-button, .contacts-button{
+.projects-button, .about-me-button, .credits-button, .contacts-button {
     display: inline-block;
     margin: 0.5rem;
     padding: 0.75rem 1.5rem;
@@ -75,7 +107,26 @@ nav {
     border-radius: 5px;
     text-decoration: none;
     font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
+
+.projects-button:hover, .about-me-button:hover, .credits-button:hover, .contacts-button:hover {
+    background-color: #009999;
+    animation: pop-out 0.3s forwards;
+}
+
+@keyframes pop-out {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
 
 .landingpagepicture {
     max-width: 40%;
@@ -86,15 +137,15 @@ nav {
     max-width: 100%;
     height: 500px;
     border-radius: 50%;
-    border: 5px solid white; /* White border */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Initial box shadow */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box shadow */
+    border: 5px solid white; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
-/* Hover effect for pop out and box shadow */
+
 .landingpagepicture img:hover {
-    transform: scale(1.05); /* Pop out effect */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced box shadow */
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .description {
