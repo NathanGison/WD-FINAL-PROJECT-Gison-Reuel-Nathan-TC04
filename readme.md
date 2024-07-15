@@ -101,3 +101,5 @@ WD-ProjectName
 |W3 Schools | To get to know how to code a specific design that I think | https://www.w3schools.com/ |
 | Bootsstrap | Get the icon designs for my website| https://getbootstrap.com/|
 
+ <!--START_SECTION:waka-->
+<!--END_SECTION:waka-->
