@@ -102,4 +102,13 @@ WD-ProjectName
 | Bootsstrap | Get the icon designs for my website| https://getbootstrap.com/|
 
  <!--START_SECTION:waka-->
+
+```txt
+C++           9 hrs 18 mins   ███████████████▓░░░░░░░░░   62.76 %
+HTML          3 hrs 28 mins   ██████░░░░░░░░░░░░░░░░░░░   23.42 %
+CSS           1 hr 39 mins    ██▓░░░░░░░░░░░░░░░░░░░░░░   11.16 %
+Markdown      18 mins         ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.07 %
+Git           5 mins          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.57 %
+```
+
 <!--END_SECTION:waka-->
